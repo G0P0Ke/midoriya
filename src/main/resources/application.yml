@@ -1,0 +1,73 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+  rabbitmq:
+    username: happyMakar
+    host: 'localhost'
+    port: 5672
+    virtual-host: 'coursework_broker'
+    password: secureAnton
+  data:
+    mongodb:
+      host: localhost
+      port: '27017'
+      database: test
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: kek123
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/comtrade
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+management:
+  endpoints:
+    web:
+      exposure:
+        include: mappings
+
+touka.env: 'http://localhost:8081'
+
+# Configs
+# country=40,56,100,191,196,203,208,233,246,250,276,300,348,372,380,428,440,442,470,528,616,620,642,703,705,724,752
+
+# allCountries=40,56,100,191,196,203,208,233,246,250,276,300,348,372,380,428,440,442,470,528,616,620,642,703,705,724,752,156,392,410,699,792,826,842
+
+# Austria - 40
+# Belgium - 56
+# Bulgaria - 100
+# Croatia - 191
+# Cyprus - 196
+# Czechia - 203
+# Denmark - 208
+# Estonia - 233
+# Finland - 246
+# France - 250
+# Germany - 276
+# Greece - 300
+# Hungary - 348
+# Ireland - 372
+# Italy - 380
+# Latvia - 428
+# Lithuania - 440
+# Luxembourg - 442
+# Malta - 470
+# Netherlands - 528
+# Poland - 616
+# Portugal - 620
+# Romania - 642
+# Slovakia - 703
+# Slovenia - 705
+# Spain - 724
+# Sweden - 752
+# China - 156
+# Japan - 392
+# South Korea - 410
+# India - 699
+# Turkey - 792
+# United Kingdom - 826
+# USA - 842
